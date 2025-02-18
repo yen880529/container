@@ -3,58 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui.css">
     <title>前往各個網頁</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            padding: 50px;
-        }
-
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        button {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <h1>工具頁面</h1>
         <div class="button-group">
-            <button onclick="window.location.href='https://yen880529.github.io/CNC_PCD/CNC_PCD.html'">孔位座標計算</button>
-            <button onclick="window.location.href='https://yen880529.github.io/oil_test/'">球碗油溝計算</button>
+            <a href="https://yen880529.github.io/CNC_PCD/CNC_PCD.html">
+                <button>孔位座標計算</button>
+            </a>
+            <a href="https://yen880529.github.io/oil_test/">
+                <button>球碗油溝計算</button>
+            </a>
         </div>
     </div>
 </body>
