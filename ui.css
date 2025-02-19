@@ -6,19 +6,33 @@ body {
 }
 
 .container {
-    background: white;
+    background: black;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    width: 90%; /* 讓容器填滿大部分螢幕 */
+    max-width: 400px; /* 限制最大寬度 */
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* 垂直排列 */
-    justify-content: center; /* 置中 */
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 針對手機小螢幕進行調整 */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* 讓寬度更適應小螢幕 */
+        padding: 20px; /* 減少 padding，避免佔據過多空間 */
+    }
+
+    button {
+        font-size: 14px; /* 減小字體，讓按鈕更符合小螢幕 */
+        padding: 0.8em 2em; /* 調整按鈕內邊距 */
+    }
 }
 
 h1 {
-    color: #333;
+    color: white;
     margin-bottom: 20px;
     font-size: 24px;
 }
