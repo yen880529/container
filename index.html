@@ -10,25 +10,41 @@
     <div class="container">
         <h1>工具頁面</h1>
         <div class="button-group">
-            <a href="https://script.google.com/macros/s/AKfycbxmdG8KSvssqHmej2HVJrmpV0t5Lcg5xYP3hzlttuF-/dev">
+            <a href="https://script.google.com/macros/s/AKfycbxmdG8KSvssqHmej2HVJrmpV0t5Lcg5xYP3hzlttuF-/dev" class="delayed-link">
                 <button class="special-button">程式回傳登記</button>
             </a>
-            <a href="https://yen880529.github.io/CNC_PCD/CNC_PCD.html">
+            <a href="https://yen880529.github.io/CNC_PCD/CNC_PCD.html" class="delayed-link">
                 <button>孔位座標計算</button>
             </a>
-            <a href="https://yen880529.github.io/rpm_drill/rpm_drill">
+            <a href="https://yen880529.github.io/rpm_drill/rpm_drill" class="delayed-link">
                 <button>鑽孔轉速進給計算</button>
             </a>
-            <a href="https://yen880529.github.io/pitch/pitch">
+            <a href="https://yen880529.github.io/pitch/pitch" class="delayed-link">
                 <button>攻牙進給率計算</button>
             </a>
-            <a href="https://yen880529.github.io/lathe_rpm/lathe_rpm">
+            <a href="https://yen880529.github.io/lathe_rpm/lathe_rpm" class="delayed-link">
                 <button>車削參數計算</button>
             </a>
-            <a href="https://yen880529.github.io/oil_test/">
+            <a href="https://yen880529.github.io/oil_test/" class="delayed-link">
                 <button>球碗油溝計算</button>
             </a>
         </div>
     </div>
+
+    <script>
+        // 找到所有帶有 delayed-link 類別的連結
+        const links = document.querySelectorAll('.delayed-link');
+
+        // 為每個連結設置點擊事件
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止立即跳轉
+                const url = this.href; // 獲取跳轉的網址
+                setTimeout(() => {
+                    window.location.href = url; // 在 0.5 秒後跳轉
+                }, 500); // 設置延遲時間 500 毫秒
+            });
+        });
+    </script>
 </body>
 </html>
