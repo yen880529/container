@@ -10,6 +10,9 @@ h1 {
     margin-bottom: 20px;
     font-size: 24px;
 }
+button, .special-button {
+    will-change: transform, opacity; /* 提前告訴瀏覽器動畫屬性 */
+}
 
 /* 按鈕組的間距設定 */
 .button-group {
