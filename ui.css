@@ -11,15 +11,17 @@ h1 {
     font-size: 24px;
 }
 
+/* 按鈕組的間距設定 */
 .button-group {
     display: flex;
     flex-direction: column; /* 垂直排列 */
     gap: 20px; /* 按鈕間距 */
 }
 
+/* 保持現有樣式不變 */
 button {
-    padding: 1em 2.5em; /* 增加內邊距，使按鈕變寬 */
-    border: 2px solid #7678ed;
+    padding: 1em 2.5em;
+    border: 2px solid #013a63;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -29,30 +31,44 @@ button {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #7678ed;
-    width: 100%; /* 讓按鈕填滿容器 */
-    max-width: 300px; /* 限制最大寬度 */
-    margin: 0 auto; /* 置中 */
+    color: #013a63;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 button::before {
     content: '';
     width: 0;
-    height: 500%; /* 增加高度以適應較寬的按鈕 */
+    height: 500%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #7678ed;
+    background: #013a63;
     transition: .5s ease;
     display: block;
     z-index: -1;
 }
 
 button:hover::before {
-    width: 130%; /* 擴大覆蓋範圍以適應新的按鈕大小 */
+    width: 130%;
 }
 
 button:hover {
     color: #ffffff;
+}
+
+/* 為 "程式回傳登記" 按鈕設置特殊顏色 */
+.special-button {
+    color: #14746f; /* 更改文字顏色 */
+    border-color: #14746f; /* 更改邊框顏色 */
+}
+
+.special-button:hover {
+    color: #ffffff; /* 懸停時文字顏色 */
+}
+
+.special-button::before {
+    background: #14746f; /* 更改背景顏色 */
 }
