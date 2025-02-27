@@ -75,3 +75,17 @@ button:hover {
 .special-button::before {
     background: #14746f; /* 更改背景顏色 */
 }
+
+/* 為 "測試" 按鈕設置特殊顏色 */
+.test-button {
+    color: red; /* 更改文字顏色 */
+    border-color: red; /* 更改邊框顏色 */
+}
+
+.test-button:hover {
+    color: #ffffff; /* 懸停時文字顏色 */
+}
+
+.test-button::before {
+    background: red; /* 更改背景顏色 */
+}
