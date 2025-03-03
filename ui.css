@@ -1,50 +1,26 @@
+body {
+    background: linear-gradient(45deg, #f4f4f4, #a9c0d8, #1abc9c); /* 45度角漸變 */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    padding: 0; /* 移除默認 padding */
+    margin: 0; /* 移除默認 margin */
+    height: 100vh; /* 設置 body 高度為 100vh */
+    display: flex; /* 使用 flex 排版 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
 .container {
     padding: 40px;
     background-color: #232329; /* 與背景顏色不同的顏色 */
     border-radius: 10px; /* 可選：圓角效果 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 可選：陰影效果 */
     max-width: 300px;
-    margin: 20px auto;
+    width: 100%; /* 讓容器寬度適應 */
+    height: auto; /* 高度自動 */
+    margin: 0; /* 移除 margin */
 }
-
-body {
-    background: linear-gradient(45deg, #f4f4f4, #a9c0d8, #1abc9c); /* 45度角漸變 */
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-}
-
-h1 {
-    color: #1abc9c; /* 清新的綠色 */
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center; /* 靠左對齊 */
-    margin-bottom: 15px;
-    letter-spacing: 2px; /* 調整字母間距 */
-}
-
-h2 {
-    color: #1FAAE6; /* 清新的綠色 */
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center; /* 靠左對齊 */
-    margin-bottom: 15px;
-    letter-spacing: 2px; /* 調整字母間距 */
-}
-
-h3 {
-    color: #FF386D; /* 清新的綠色 */
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center; /* 靠左對齊 */
-    margin-bottom: 15px;
-    letter-spacing: 2px; /* 調整字母間距 */
-}
-
 
 button, .special-button {
     will-change: transform, opacity; /* 提前告訴瀏覽器動畫屬性 */
