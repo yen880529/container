@@ -6,10 +6,36 @@ body {
 }
 
 h1 {
-    color: black;
-    margin-bottom: 20px;
-    font-size: 36px;
+    color: #1abc9c; /* 清新的綠色 */
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center; /* 靠左對齊 */
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* 調整字母間距 */
 }
+
+h2 {
+    color: #013a63; /* 清新的綠色 */
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center; /* 靠左對齊 */
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* 調整字母間距 */
+}
+
+h3 {
+    color: red; /* 清新的綠色 */
+    font-size: 56px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center; /* 靠左對齊 */
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* 調整字母間距 */
+}
+
+
 button, .special-button {
     will-change: transform, opacity; /* 提前告訴瀏覽器動畫屬性 */
 }
@@ -64,8 +90,8 @@ button:hover {
 
 /* 為 "程式回傳登記" 按鈕設置特殊顏色 */
 .special-button {
-    color: #14746f; /* 更改文字顏色 */
-    border-color: #14746f; /* 更改邊框顏色 */
+    color: #1abc9c; /* 更改文字顏色 */
+    border-color: #1abc9c; /* 更改邊框顏色 */
 }
 
 .special-button:hover {
@@ -73,7 +99,7 @@ button:hover {
 }
 
 .special-button::before {
-    background: #14746f; /* 更改背景顏色 */
+    background: #1abc9c; /* 更改背景顏色 */
 }
 
 /* 為 "測試" 按鈕設置特殊顏色 */
