@@ -9,40 +9,50 @@
 <body>
     <div class="container">
         <div class="button-group">
-            <h1>程式</h1>
-            <a href="https://script.google.com/macros/s/AKfycbxmdG8KSvssqHmej2HVJrmpV0t5Lcg5xYP3hzlttuF-/dev" class="delayed-link">
-                <button class="special-button">程式回傳登記</button>
-            </a>
-            <a href="https://yen880529.github.io/-search_code/excel_to_html" class="delayed-link">
-                <button class="special-button">程式檔號搜尋</button>
-            </a>     
-            <h2>工具</h2>
-            <a href="https://yen880529.github.io/CNC_PCD/CNC_PCD.html" class="delayed-link">
-                <button>孔位座標計算</button>
-            </a>
-            <a href="https://yen880529.github.io/rpm_drill/rpm_drill" class="delayed-link">
-                <button>鑽孔轉速進給計算</button>
-            </a>
-            <a href="https://yen880529.github.io/pitch/pitch" class="delayed-link">
-                <button>攻牙進給率計算</button>
-            </a>
-            <a href="https://yen880529.github.io/lathe_rpm/lathe_rpm" class="delayed-link">
-                <button>車削參數計算</button>
-            </a>
-            <a href="https://yen880529.github.io/milling_rpm/milling_rpm" class="delayed-link">
-                <button>銑削參數計算</button>
-            </a>
-            <a href="https://yen880529.github.io/oil_test/" class="delayed-link">
-                <button>球碗油溝計算</button>
-            </a> 
-            <h3>測試</h3>     
-            <a href="https://yen880529.github.io/ball_point/test" class="delayed-link">
-                <button class="test-button">測試中(牙球)</button>
-            </a>
+            <div class="dropdown programs" onclick="toggleDropdown('programs')">程式 ▼</div>
+            <div id="programs" class="dropdown-content">
+                <a href="https://script.google.com/macros/s/AKfycbxmdG8KSvssqHmej2HVJrmpV0t5Lcg5xYP3hzlttuF-/dev" class="delayed-link">
+                    <button class="special-button">程式回傳登記</button>
+                </a>
+                <a href="https://yen880529.github.io/-search_code/excel_to_html" class="delayed-link">
+                    <button class="special-button">程式檔號搜尋</button>
+                </a>  
+            </div>   
+            <div class="dropdown tools" onclick="toggleDropdown('tools')">工具 ▼</div>
+            <div id="tools" class="dropdown-content">
+                <a href="https://yen880529.github.io/CNC_PCD/CNC_PCD.html" class="delayed-link">
+                    <button>孔位座標計算</button>
+                </a>
+                <a href="https://yen880529.github.io/rpm_drill/rpm_drill" class="delayed-link">
+                    <button>鑽孔轉速進給計算</button>
+                </a>
+                <a href="https://yen880529.github.io/pitch/pitch" class="delayed-link">
+                    <button>攻牙進給率計算</button>
+                </a>
+                <a href="https://yen880529.github.io/lathe_rpm/lathe_rpm" class="delayed-link">
+                    <button>車削參數計算</button>
+                </a>
+                <a href="https://yen880529.github.io/milling_rpm/milling_rpm" class="delayed-link">
+                    <button>銑削參數計算</button>
+                </a>
+                <a href="https://yen880529.github.io/oil_test/" class="delayed-link">
+                    <button>球碗油溝計算</button>
+                </a> 
+            </div>
+            <div class="dropdown test" onclick="toggleDropdown('test')">測試 ▼</div>
+            <div id="test" class="dropdown-content">     
+                <a href="https://yen880529.github.io/ball_point/test" class="delayed-link">
+                    <button class="test-button">測試中(牙球)</button>
+                </a>
         </div>
     </div>
 
     <script>
+
+        function toggleDropdown(id) {
+                    const content = document.getElementById(id);
+                    content.style.display = content.style.display === "flex" ? "none" : "flex";
+                }
         // 找到所有帶有 delayed-link 類別的連結
         const links = document.querySelectorAll('.delayed-link');
 
@@ -56,6 +66,7 @@
                 }, 300); // 設置延遲時間 500 毫秒
             });
         });
+
     </script>
 </body>
 </html>

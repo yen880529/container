@@ -3,7 +3,7 @@
     background-color: #232329; /* 與背景顏色不同的顏色 */
     border-radius: 10px; /* 可選：圓角效果 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 可選：陰影效果 */
-    max-width: 400px;
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -125,4 +125,46 @@ button:hover {
 
 .test-button::before {
     background: #FF386D; /* 更改背景顏色 */
+}
+
+.dropdown {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown.programs {
+    background-color: #1abc9c;
+    color: white;
+}
+.dropdown.programs:hover {
+    background-color: #16a085;
+}
+
+.dropdown.tools {
+    background-color: #1FAAE6;
+    color: white;
+}
+.dropdown.tools:hover {
+    background-color: #0f8acb;
+}
+
+.dropdown.test {
+    background-color: #FF386D;
+    color: white;
+}
+.dropdown.test:hover {
+    background-color: #d92455;
 }
