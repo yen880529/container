@@ -67,6 +67,26 @@
             });
         });
 
+        // 將所有的 dropdown-content 隱藏
+        function closeAllDropdowns() {
+            const dropdowns = document.querySelectorAll('.dropdown-content');
+            dropdowns.forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+        }
+
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            // 先關閉所有下拉選單
+            closeAllDropdowns();
+
+            // 如果當前選單是關閉的，則打開它
+            if (content.style.display !== "flex") {
+                content.style.display = "flex";
+            }
+        }
+
+
     </script>
 </body>
 </html>
